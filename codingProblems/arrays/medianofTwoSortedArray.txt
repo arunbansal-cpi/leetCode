@@ -1,0 +1,30 @@
+class Solution {
+public:
+    double getMedian(vector<int> v1, vector<int> v2, int s1, int s2){
+        int totalSize = s1+s2;
+        int medianPos = totalsize/2;
+        int lastPos = -1;
+        int f1 = 0, l1 = s1 - 1, f2 = 0, l2 = s2 -1;
+        int mid1, mid2;
+        while(true){
+            mid1 = (f1+l1)/2;
+            mid2 = (f2+l2)/2;
+            if(v1[mid1] > v2[mid2]){
+                l1 = mid1 -1;
+            }
+            else
+                l2 = mid2-1;
+            if()
+                
+        }
+        
+    }
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        int m = nums1.size();
+        int n = nums2.size();
+        if(m<n){
+            return getMedian(nums1, nums2, m, n);
+        else
+            return getmedian(nums2, num1, n, m);
+    }
+};
